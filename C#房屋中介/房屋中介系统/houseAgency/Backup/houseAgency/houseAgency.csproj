@@ -1,0 +1,378 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F1375CC1-D557-4409-96B0-AC41E279E28A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>houseAgency</RootNamespace>
+    <AssemblyName>houseAgency</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmBackMoney.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBackMoney.Designer.cs">
+      <DependentUpon>frmBackMoney.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBargin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBargin.Designer.cs">
+      <DependentUpon>frmBargin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmChangYouSelfPwd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmChangYouSelfPwd.Designer.cs">
+      <DependentUpon>frmChangYouSelfPwd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEmpleeyAll.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEmpleeyAll.Designer.cs">
+      <DependentUpon>frmEmpleeyAll.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEmploeey.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEmploeey.Designer.cs">
+      <DependentUpon>frmEmploeey.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmFavor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFavor.Designer.cs">
+      <DependentUpon>frmFavor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmFitment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFitment.Designer.cs">
+      <DependentUpon>frmFitment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmFloor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFloor.Designer.cs">
+      <DependentUpon>frmFloor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmGov.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGov.Designer.cs">
+      <DependentUpon>frmGov.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmHouse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmHouse.Designer.cs">
+      <DependentUpon>frmHouse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmIntend.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmIntend.Designer.cs">
+      <DependentUpon>frmIntend.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmIntendInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmIntendInfo.Designer.cs">
+      <DependentUpon>frmIntendInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.Designer.cs">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMoney.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMoney.Designer.cs">
+      <DependentUpon>frmMoney.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMothed.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMothed.Designer.cs">
+      <DependentUpon>frmMothed.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmOk.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOk.Designer.cs">
+      <DependentUpon>frmOk.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPeopleInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPeopleInfo.Designer.cs">
+      <DependentUpon>frmPeopleInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPeopleList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPeopleList.Designer.cs">
+      <DependentUpon>frmPeopleList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRestore.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRestore.Designer.cs">
+      <DependentUpon>frmRestore.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSeat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSeat.Designer.cs">
+      <DependentUpon>frmSeat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSelect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSelect.Designer.cs">
+      <DependentUpon>frmSelect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmStateHouse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmStateHouse.Designer.cs">
+      <DependentUpon>frmStateHouse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmStock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmStock.Designer.cs">
+      <DependentUpon>frmStock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmStudyDegree.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmStudyDegree.Designer.cs">
+      <DependentUpon>frmStudyDegree.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmType.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmType.Designer.cs">
+      <DependentUpon>frmType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmUserLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUserLogin.Designer.cs">
+      <DependentUpon>frmUserLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mothedCls\claFavorMethod.cs" />
+    <Compile Include="mothedCls\ClsCon.cs" />
+    <Compile Include="mothedCls\clsEmpleey.cs" />
+    <Compile Include="mothedCls\clsEmpleeyMethed.cs" />
+    <Compile Include="mothedCls\clsFavor.cs" />
+    <Compile Include="mothedCls\clsFitment.cs" />
+    <Compile Include="mothedCls\clsFitmentMethod.cs" />
+    <Compile Include="mothedCls\clsFloor.cs" />
+    <Compile Include="mothedCls\clsFloorMethod.cs" />
+    <Compile Include="mothedCls\clsgov.cs" />
+    <Compile Include="mothedCls\clsgovMethod.cs" />
+    <Compile Include="mothedCls\ClsHouse.cs" />
+    <Compile Include="mothedCls\ClsHouseMethed.cs" />
+    <Compile Include="mothedCls\clsIntend.cs" />
+    <Compile Include="mothedCls\clsIntendMethed.cs" />
+    <Compile Include="mothedCls\clsLogin.cs" />
+    <Compile Include="mothedCls\clsLoginMethed.cs" />
+    <Compile Include="mothedCls\clsMethed.cs" />
+    <Compile Include="mothedCls\clsMethedMethod.cs" />
+    <Compile Include="mothedCls\clsMoneyAndInfo.cs" />
+    <Compile Include="mothedCls\clsMoneyAndInfoMethod.cs" />
+    <Compile Include="mothedCls\clsSeat.cs" />
+    <Compile Include="mothedCls\clsSeatMethod.cs" />
+    <Compile Include="mothedCls\clsStudyDegree.cs" />
+    <Compile Include="mothedCls\clsStudyDegreeMethod.cs" />
+    <Compile Include="mothedCls\clstype.cs" />
+    <Compile Include="mothedCls\clstypeMethod.cs" />
+    <Compile Include="mothedCls\clsUser.cs" />
+    <Compile Include="mothedCls\clsUserMethod.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmBackMoney.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmBackMoney.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBargin.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmBargin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmChangYouSelfPwd.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmChangYouSelfPwd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEmpleeyAll.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmEmpleeyAll.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEmploeey.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmEmploeey.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFavor.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmFavor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFitment.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmFitment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFloor.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmFloor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGov.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmGov.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmHouse.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmHouse.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmIntend.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmIntend.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmIntendInfo.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmIntendInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMain.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMoney.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmMoney.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMothed.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmMothed.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOk.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmOk.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPeopleInfo.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmPeopleInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPeopleList.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmPeopleList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRestore.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmRestore.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSeat.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmSeat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSelect.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmSelect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmStateHouse.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmStateHouse.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmStock.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmStock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmStudyDegree.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmStudyDegree.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmType.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUserLogin.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmUserLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\增加.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="images\删除.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="images\修改.bmp" />
+    <Content Include="images\查询.bmp" />
+    <Content Include="images\返回.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="database\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

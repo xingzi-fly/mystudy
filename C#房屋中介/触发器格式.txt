@@ -1,0 +1,22 @@
+create trigger t1 on favor instead of insert
+as
+begin
+	declare @favor_ID varchar(10),@favor_name varchar(20),@favor_remark varchar(50)
+	select @favor_ID=Max(favor_ID) from favor
+	select @favor_name=favor_name from inserted
+	select @favor_remark =favor_remark  from inserted
+	if(@favor_ID is null)
+		set @favor_ID='fav1001'--作动见编号就知道是什么表
+	else
+		set @favor_ID='fav'+cast(cast(substring(@favor_ID,4,4) as int)+1 as varchar(20))
+
+	if exists(select favor_name from favor where favor_name=@favor_name)
+		rollback--控制不要输入两个同样的信息
+		
+	else
+		begin
+			insert into favor values(@favor_ID,@favor_name,@favor_remark)			
+		end
+end
+
+drop trigger t1
